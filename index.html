@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order a Smoothie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Order Your Smoothie</h1>
+    
+    <div class="image-container">
+        <img src="https://media.istockphoto.com/id/513799906/photo/orange-fruit-smoothie-in-the-glass-jars.jpg?s=612x612&w=0&k=20&c=qVaAz5ANfjzGKDdmq5bBoxMAgUEs-zOOaAk_Gx7s284=" alt="Smoothie" class="smoothie-image">
+        <img src="https://www.simplehealthykitchen.com/wp-content/uploads/2014/12/stress-buster-orange-smoothie-simplehealthykitchen.com_.jpg" alt="Smoothie" class="smoothie-image">
+    </div>
+
+    <form id="smoothie-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <br>
+        
+        <label for="flavor">Choose a flavor:</label>
+        <select id="flavor" name="flavor" required>
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+            <option value="blueberry">Blueberry</option>
+            <option value="pineapple">Pineapple</option>
+            <option value="chocolate">Chocolate</option>
+        </select>
+        <br>
+        
+        <label for="extras">Add extras:</label>
+        <input type="checkbox" id="protein" name="extras" value="Protein Powder">Protein Powder
+        <input type="checkbox" id="chia" name="extras" value="Chia Seeds">Chia Seeds
+        <input type="checkbox" id="flax" name="extras" value="Flax Seeds">Flax Seeds
+        <input type="checkbox" id="spinach" name="extras" value="Spinach">Spinach
+        <input type="checkbox" id="honey" name="extras" value="Honey">Honey
+        <br>
+        
+        <label for="tip">Tip:</label>
+        <select id="tip" name="tip">
+            <option value="0">No Tip</option>
+            <option value="1">$1</option>
+            <option value="2">$2</option>
+            <option value="3">$3</option>
+            <option value="5">$5</option>
+        </select>
+        <br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Any special instructions?"></textarea>
+        <br>
+        
+        <button type="button" id="order-button">Order</button>
+    </form>
+    <div id="order-summary"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
